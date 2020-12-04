@@ -58,12 +58,12 @@ hr {
   list-style: none;
 }
 
-.list-non-bullet .nav-pills {
-}
-
 .list-item-inline {
   display: inline;
   padding: 0rem 0.5rem;
+}
+.social-links {
+  margin: 5px 0px;
 }
 
 .navigation {
@@ -105,9 +105,11 @@ hr {
 }
 
 .hero .hero-image {
+  width: 100%;
   max-width: 350px;
   display: block;
   margin: auto;
+  object-fit: cover;
 }
 
 .hero-image-blog {
@@ -196,6 +198,10 @@ footer {
   font-size: 100px;
 }
 
+body {
+  width: 100%;
+}
+
 @media (max-width: 700px) {
   .container {
     display: flex;
@@ -204,6 +210,7 @@ footer {
   .nav-brand {
     justify-content: center;
     display: flex;
+    padding: 1rem;
   }
   .nav-pills {
     justify-content: center;
