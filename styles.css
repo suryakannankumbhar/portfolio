@@ -107,6 +107,7 @@ hr {
 .hero .hero-image {
   width: 100%;
   max-width: 350px;
+  height: auto;
   display: block;
   margin: auto;
   object-fit: cover;
@@ -114,7 +115,9 @@ hr {
 
 .hero-image-blog {
   justify-content: center;
+  width: 100%;
   max-width: 350px;
+  height: auto;
   padding-top: 2rem;
 }
 
