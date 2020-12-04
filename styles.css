@@ -69,7 +69,6 @@ hr {
 .navigation {
   background-color: var(--primary-color);
   color: white;
-
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   display: flex;
@@ -207,7 +206,6 @@ footer {
 }
 
 .nav-brand {
-  padding-top: 00.5rem;
   display: flex;
   float: left;
 }
