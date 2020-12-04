@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+:root {
+  --primary-color: #52057b;
+  --heading-color: #6b7280;
+  --off-white: #34d399;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0px;
+  background-color: black;
+}
+
+hr {
+  margin: 2.5rem 0rem;
+}
+/* contaiers */
+
+.container {
+  padding: 0rem 1rem;
+}
+
+.container-center {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* links */
+
+.link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+.link-primary {
+  background-color: var(--primary-color);
+  border-radius: 5rem;
+  color: white;
+}
+
+.link-secondary {
+  color: white;
+  border-radius: 5rem;
+  border: 1px solid var(--primary-color);
+}
+
+/* lists */
+
+.list-non-bullet {
+  list-style: none;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+
+.navigation {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.navigation .nav-brand {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navigation .link {
+  color: white;
+}
+
+.navigation .nav-pills {
+  text-align: right;
+}
+
+.navigation .link-active {
+  font-weight: bold;
+}
+
+/* header */
+
+.hero {
+  padding: 2rem;
+  padding-top: 5rem;
+}
+
+.hero .hero-image {
+  max-width: 350px;
+  display: block;
+  margin: auto;
+}
+
+.hero-image-blog {
+  justify-content: center;
+  max-width: 350px;
+  padding-top: 2rem;
+}
+
+.hero .hero-heading {
+  padding-top: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.hero-span {
+  color: red;
+}
+
+.hero-blog {
+  text-align: center;
+  color: white;
+}
+
+/* sections */
+.section h1 {
+  text-align: center;
+}
+
+.section {
+  padding: 2rem;
+  background-color: #1f2937;
+  color: white;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.ow {
+  background-color: var(--primary-color);
+}
+
+.about-me-span,
+.projects-span,
+.blogs-span {
+  color: red;
+  text-decoration: none;
+}
+
+/* footer */
+
+footer {
+  background-color: var(--primary-color);
+  padding: 1rem 0rem;
+  text-align: center;
+  color: white;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.footer .links {
+  color: white;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.nav-brand {
+  display: flex;
+  float: left;
+}
