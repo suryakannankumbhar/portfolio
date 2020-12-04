@@ -32,6 +32,8 @@ hr {
   text-decoration: none;
   padding: 0.5rem 1rem;
   color: white;
+  max-width: fit-content;
+  margin-bottom: 0.75rem;
 }
 
 .link-primary {
@@ -46,10 +48,17 @@ hr {
   border: 1px solid var(--primary-color);
 }
 
+.link-length {
+  max-width: fit-content;
+}
+
 /* lists */
 
 .list-non-bullet {
   list-style: none;
+}
+
+.list-non-bullet .nav-pills {
 }
 
 .list-item-inline {
@@ -60,9 +69,12 @@ hr {
 .navigation {
   background-color: var(--primary-color);
   color: white;
-  padding: 1rem;
+
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation .nav-brand {
@@ -80,6 +92,10 @@ hr {
 
 .navigation .link-active {
   font-weight: bold;
+}
+
+.navigation .container {
+  text-align: justify;
 }
 
 /* header */
@@ -116,13 +132,37 @@ hr {
   color: white;
 }
 
+.nav-brand,
+.nav-pills {
+  display: inline;
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-brand {
+    justify-content: center;
+    display: flex;
+  }
+  .nav-pills {
+    justify-content: center;
+    display: flex;
+  }
+}
+
 /* sections */
 .section h1 {
   text-align: center;
 }
 
+ul {
+  padding-left: 0px;
+}
+
 .section {
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #1f2937;
   color: white;
   border-radius: 1rem;
