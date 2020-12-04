@@ -157,8 +157,12 @@ hr {
   text-align: center;
 }
 
+ul {
+  padding-left: 0px;
+}
+
 .section {
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #1f2937;
   color: white;
   border-radius: 1rem;
