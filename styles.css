@@ -207,6 +207,7 @@ footer {
 }
 
 .nav-brand {
+  padding-top: 00.5rem;
   display: flex;
   float: left;
 }
