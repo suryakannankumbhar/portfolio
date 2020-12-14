@@ -225,3 +225,13 @@ body {
     align-items: center;
   }
 }
+.topButton {
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+html {
+  scroll-behavior: smooth;
+}
