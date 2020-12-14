@@ -224,6 +224,13 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .topButton {
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+  }
 }
 .topButton {
   background-color: white;
