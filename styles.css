@@ -1,246 +1,251 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 
 :root {
-  --primary-color: #52057b;
-  --heading-color: #6b7280;
-  --off-white: #34d399;
+    --primary-color: #52057b;
+    --heading-color: #6b7280;
+    --off-white: #34d399;
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
-  margin: 0px;
-  background-color: black;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    background-color: black;
 }
 
 hr {
-  margin: 2.5rem 0rem;
+    margin: 2.5rem 0rem;
 }
 /* contaiers */
 
 .container {
-  padding: 0rem 1rem;
+    padding: 0rem 1rem;
 }
 
 .container-center {
-  max-width: 600px;
-  margin: auto;
+    max-width: 600px;
+    margin: auto;
 }
 
 /* links */
 
 .link {
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  color: white;
-  max-width: fit-content;
-  margin-bottom: 0.75rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    max-width: fit-content;
+    margin-bottom: 0.75rem;
 }
 
 .link-primary {
-  background-color: var(--primary-color);
-  border-radius: 5rem;
-  color: white;
+    background-color: var(--primary-color);
+    border-radius: 5rem;
+    color: white;
 }
 
 .link-secondary {
-  color: white;
-  border-radius: 5rem;
-  border: 1px solid var(--primary-color);
+    color: white;
+    border-radius: 5rem;
+    border: 1px solid var(--primary-color);
 }
 
 .link-length {
-  max-width: fit-content;
+    max-width: fit-content;
 }
 
 /* lists */
 
 .list-non-bullet {
-  list-style: none;
+    list-style: none;
 }
 
 .list-item-inline {
-  display: inline;
-  padding: 0rem 0.5rem;
+    display: inline;
+    padding: 0rem 0.5rem;
 }
 .social-links {
-  margin: 5px 0px;
+    margin: 5px 0px;
 }
 
 .navigation {
-  background-color: var(--primary-color);
-  color: white;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navigation .nav-brand {
-  font-weight: bold;
-  font-size: x-large;
+    font-weight: bold;
+    font-size: x-large;
 }
 
 .navigation .link {
-  color: white;
+    color: white;
 }
 
 .navigation .nav-pills {
-  text-align: right;
+    text-align: right;
 }
 
 .navigation .link-active {
-  font-weight: bold;
+    font-weight: bolder;
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px white;
 }
 
 .navigation .container {
-  text-align: justify;
+    text-align: justify;
 }
 
 /* header */
 
 .hero {
-  padding: 2rem;
-  padding-top: 5rem;
+    padding: 2rem;
+    padding-top: 5rem;
 }
 
 .hero .hero-image {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  display: block;
-  margin: auto;
-  object-fit: cover;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: auto;
+    object-fit: cover;
 }
 
 .hero-image-blog {
-  justify-content: center;
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  padding-top: 2rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    padding-top: 2rem;
 }
 
 .hero .hero-heading {
-  padding-top: 1rem;
-  color: white;
-  text-align: center;
+    padding-top: 1rem;
+    color: white;
+    text-align: center;
 }
 
 .hero-span {
-  color: red;
+    color: red;
 }
 
 .hero-blog {
-  text-align: center;
-  color: white;
+    text-align: center;
+    color: white;
 }
 
 .nav-brand,
 .nav-pills {
-  display: inline;
+    display: inline;
 }
 
 /* sections */
 .section h1 {
-  text-align: center;
+    text-align: center;
 }
 
 ul {
-  padding-left: 0px;
+    padding-left: 0px;
 }
 
 .section {
-  padding: 1.5rem;
-  background-color: #1f2937;
-  color: white;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 10%;
-  margin-right: 10%;
+    padding: 1.5rem;
+    background-color: #1f2937;
+    color: white;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .ow {
-  background-color: var(--primary-color);
+    background-color: var(--primary-color);
 }
 
 .about-me-span,
 .projects-span,
 .blogs-span {
-  color: red;
-  text-decoration: none;
+    color: red;
+    text-decoration: none;
 }
 
 /* footer */
 
 footer {
-  background-color: var(--primary-color);
-  padding: 1rem 0rem;
-  text-align: center;
-  color: white;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+    background-color: var(--primary-color);
+    padding: 1rem 0rem;
+    text-align: center;
+    color: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .footer .links {
-  color: white;
+    color: white;
 }
 
 .footer ul {
-  padding-inline-start: 0px;
+    padding-inline-start: 0px;
 }
 
 .footer .footer-header {
-  font-weight: bold;
-  font-size: large;
+    font-weight: bold;
+    font-size: large;
 }
 
 .nav-brand {
-  display: flex;
-  float: left;
-  font-size: 100px;
+    display: flex;
+    float: left;
+    font-size: 100px;
 }
 
 body {
-  width: 100%;
+    width: 100%;
 }
 
 @media (max-width: 700px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-  .nav-brand {
-    justify-content: center;
-    display: flex;
-    padding: 1rem;
-  }
-  .nav-pills {
-    justify-content: center;
-    display: flex;
-  }
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-brand {
+        justify-content: center;
+        display: flex;
+        padding: 1rem;
+    }
+    .nav-pills {
+        justify-content: center;
+        display: flex;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .topButton {
-  background-color: white;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-}
-html {
-  scroll-behavior: smooth;
-}
-@media (max-width: 500px) {
-  .topButton {
     background-color: white;
     border-radius: 50%;
     position: fixed;
-    bottom: 50px;
+    bottom: 25px;
     right: 25px;
-  }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 500px) {
+    .topButton {
+        background-color: white;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 50px;
+        right: 25px;
+    }
 }
