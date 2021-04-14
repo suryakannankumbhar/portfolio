@@ -26,6 +26,10 @@ hr {
     margin: auto;
 }
 
+/* .section p {
+    text-align: center;
+} */
+
 /* links */
 
 .link {
@@ -35,6 +39,12 @@ hr {
     max-width: fit-content;
     margin-bottom: 0.75rem;
 }
+
+/* .wrapper .link {
+    display: inline-flexbox;
+    text-align: center;
+    align-items: center;
+} */
 
 .link-primary {
     background-color: var(--primary-color);
