@@ -7,10 +7,12 @@
     <title>projects | surya kannan kumbhar</title>
     <link href="styles.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/images/android-chrome-512x512.png">
+    <link href="/font-awesome/css/all.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <nav class="navigation container top">
+    <nav class="navigation container top" id="navigation">
         <div class="nav-brand">surya kannan kumbhar</div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline">
@@ -24,14 +26,24 @@
             </li>
         </ul>
     </nav>
-    <header class="hero">
+    <div class="menuBar">
+        <div id="toggle">
+            <div class="label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+
+            </div>
+            <i class="indicator"></i>
+        </div>
+    </div>
+    <header class="hero" id="hero">
         <img class="hero-image" src="/images/hero-projects.svg">
         <h1 class="hero-heading">
             my<span class="hero-span">projects</span>
         </h1>
     </header>
     <ul>
-        <section class="section">
+        <section class="section" id="section">
             <div class="container container-center">
                 <h1>personal<span class="hero-span">portfolio</span></h1>
                 <small>November, 2020</small>
@@ -46,7 +58,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section" id="section">
             <div class="container container-center">
                 <h1>covid<span class="hero-span">counter</span></h1>
                 <small>May, 2021</small>
@@ -60,7 +72,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section" id="section">
             <div class="container container-center">
                 <h1>check<span class="hero-span">weather</span></h1>
                 <small>May, 2021</small>
@@ -74,7 +86,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section" id="section">
             <div class="container container-center">
                 <h1>finding<span class="hero-span">flix</span></h1>
                 <small>May, 2021</small>
@@ -88,7 +100,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section" id="section">
             <div class="container container-center">
                 <h1>king<span class="hero-span">pong</span></h1>
                 <small>March, 2021</small>
@@ -103,7 +115,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section" id="section">
             <div class="container container-center">
                 <h1>tic<span class="hero-span">tac</span>toe</h1>
                 <small>March, 2021</small>
@@ -118,7 +130,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section" id="section">
             <div class="container container-center">
                 <h1>feeding<span class="hero-span">python</span></h1>
                 <small>March, 2021</small>
@@ -133,7 +145,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section" id="section">
             <div class="container container-center">
                 <h1>for<span class="hero-span">binge</span></h1>
                 <small>December, 2020</small>
@@ -147,7 +159,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section" id="section">
             <div class="container container-center">
                 <h1>emoti<span class="hero-span">kon</span></h1>
                 <small>December, 2020</small>
@@ -161,7 +173,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section" id="section">
             <div class="container container-center">
                 <h1>message<span class="hero-span">morse</span></h1>
                 <small>December, 2020</small>
@@ -176,7 +188,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section" id="section">
             <div class="container container-center">
                 <h1>talklike<span class="hero-span">minion</span></h1>
                 <small>December, 2020</small>
@@ -190,7 +202,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section" id="section">
             <div class="container container-center">
                 <h1>how well your friends know <span class="hero-span">you</span>?</h1>
                 <small>November, 2020</small>
@@ -207,7 +219,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section" id="section">
             <div class="container container-center">
                 <h1>footy<span class="hero-span">quiz</span></h1>
                 <small>November, 2020</small>
@@ -223,7 +235,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section" id="section">
             <div class="container container-center">
                 <h1>static<span class="hero-span">profile</span></h1>
                 <small>October, 2020</small>
@@ -239,9 +251,9 @@
         </section>
     </ul>
     <a href="#top">
-        <img class="topButton" src="images/keyboard_capslock-black-48dp.svg" />
+        <img class="topButton" id="topButton" src="images/keyboard_capslock-black-48dp.svg" />
     </a>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-header">
             connect with me
         </div>
@@ -265,6 +277,7 @@
             </li>
         </ul>
     </footer>
+    <script src="/projects.js"></script>
 
 </body>
 
