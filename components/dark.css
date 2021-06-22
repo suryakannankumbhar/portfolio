@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap'); */
 
-:root {
+/* :root {
     --primary-color: #0cafff;
     --heading-color: #6b7280;
     --off-white: #34d399;
-}
+} */
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0px;
-    background-color: white;
+    background-color: black;
 }
 
 hr {
@@ -19,6 +19,7 @@ hr {
 
 .container {
     padding: 0rem 1rem;
+    color: white;
 }
 
 .container-center {
@@ -47,19 +48,22 @@ hr {
 } */
 
 .link-primary {
-    background-color: var(--primary-color);
+    background-color: #6f7375;
     border-radius: 5rem;
     color: white;
 }
 
 .link-secondary {
-    color: black;
+    color: white;
     border-radius: 5rem;
-    border: 1px solid var(--primary-color);
+    border: 1px solid #6f7375;
 }
 
 .link-length {
     max-width: fit-content;
+}
+.link.link-length {
+    background: #6f7375;
 }
 
 /* lists */
@@ -75,9 +79,12 @@ hr {
 .social-links {
     margin: 5px 0px;
 }
+.footer a {
+    color: #cf1666;
+}
 
 .navigation {
-    background-color: var(--primary-color);
+    background: #232628;
     color: white;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -85,13 +92,14 @@ hr {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    box-shadow: 0 0 10px #4f5456;
 }
 
 .navigation .nav-brand {
     font-weight: bold;
     margin: 0;
     font-size: 30px;
-    color: black;
+    color: #cf1666;
 }
 
 .navigation .link {
@@ -105,10 +113,9 @@ hr {
 .navigation .link-active {
     font-weight: bolder;
     color: black;
-    background-color: white;
+    background-color: #cf1666;
     border-radius: 1rem;
-
-    box-shadow: 0px 0px 10px white;
+    box-shadow: 0 0 15px black;
 }
 
 .navigation .container {
@@ -141,12 +148,12 @@ hr {
 
 .hero .hero-heading {
     padding-top: 1rem;
-    color: black;
+    color: white;
     text-align: center;
 }
 
 .hero-span {
-    color: #0cafff;
+    color: #cf1666;
 }
 
 .hero-blog {
@@ -171,7 +178,7 @@ ul {
 
 .section {
     padding: 1.5rem;
-    background-color: #eaf4fc;
+    background: #232628;
     color: black;
     border-radius: 1rem;
     margin-bottom: 1rem;
@@ -180,6 +187,7 @@ ul {
     display: flex;
     align-items: center;
     text-align: center;
+    box-shadow: 0 0 10px #4f5456;
 }
 
 .ow {
@@ -189,23 +197,24 @@ ul {
 .about-me-span,
 .projects-span,
 .blogs-span {
-    color: #0cafff;
+    color: #cf1666;
     text-decoration: none;
 }
 
 /* footer */
 
 footer {
-    background-color: var(--primary-color);
+    background-color: #232628;
     padding: 1rem 0rem;
     text-align: center;
     color: white;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    box-shadow: 0 0 10px #4f5456;
 }
 
 .footer .links {
-    color: white;
+    color: #cf1666;
 }
 
 .footer ul {
@@ -248,7 +257,7 @@ body {
     }
 }
 .topButton {
-    background-color: #eaf4fc;
+    background-color: #cf1666;
     border-radius: 50%;
     position: fixed;
     bottom: 25px;
@@ -260,7 +269,7 @@ html {
 
 @media (max-width: 500px) {
     .topButton {
-        background-color: white;
+        background-color: #cf1666;
         border-radius: 50%;
         position: fixed;
         bottom: 50px;
@@ -337,3 +346,49 @@ html {
 } */
 
 /* +++++++++++++++Dark Mode Settings+++++++++++++++ */
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: grey;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 15px;
+    width: 40px;
+    transform: scale(1.5);
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.label .ball {
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    /* top: 2px; */
+    /* left: 2px; */
+    height: 20px;
+    width: 20px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}

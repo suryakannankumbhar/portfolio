@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link id="myStyleSheet" href="/components/styles.css" rel="stylesheet">
+    <link id="myStyleSheet" href="/components/light.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/images/android-chrome-512x512.png">
     <link href="/font-awesome/css/all.css" rel="stylesheet">
     <title>home | surya kannan kumbhar</title>
@@ -26,14 +26,12 @@
         </ul>
     </nav>
     <div align="right" class="menuBar">
-        <div id="toggle">
-            <div class="label">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-
-            </div>
-            <i class="indicator"></i>
-        </div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
     </div>
     <header class="hero" id="hero">
         <img class="hero-image" src="/images/hero-home.svg">
@@ -109,7 +107,8 @@
             </li>
         </ul>
     </footer>
-    <script src="/components/app.js"></script>
+    <script src="/components/app.js">
+    </script>
 </body>
 
 </html>

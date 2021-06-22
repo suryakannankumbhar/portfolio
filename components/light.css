@@ -129,6 +129,7 @@ hr {
     display: block;
     margin: auto;
     object-fit: cover;
+    margin-top: 1.5rem;
 }
 
 .hero-image-blog {
@@ -329,11 +330,57 @@ html {
     padding: 5px;
     position: relative;
 }
-/* 
-.menuBar {
+
+/* .menuBar {
     display: flex;
     margin-top: 10px;
-    align: left;
+    align: right;
 } */
 
 /* +++++++++++++++Dark Mode Settings+++++++++++++++ */
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: grey;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 15px;
+    width: 42px;
+    transform: scale(1.5);
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    /* top: 2px; */
+    /* left: 2px; */
+    height: 20px;
+    width: 20px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blog | surya kannan kumbhar</title>
-    <link href="styles.css" rel="stylesheet">
+    <link id="myStyleSheet" href="/components/light.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/images/android-chrome-512x512.png">
     <link href="/font-awesome/css/all.css" rel="stylesheet">
 
@@ -27,14 +27,12 @@
         </ul>
     </nav>
     <div align="right" class="menuBar">
-        <div id="toggle">
-            <div class="label">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-
-            </div>
-            <i class="indicator"></i>
-        </div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
     </div>
     <header class="hero-blog" id="hero">
         <img class="hero-image-blog" src="/images/hero-blog.svg">
@@ -55,7 +53,7 @@
     </section>
 
     <a href="#top">
-        <img class="topButton" id="topButton" src="images/keyboard_capslock-black-48dp.svg" />
+        <img class="topButton" id="topButton" src="/images/keyboard_capslock-black-48dp.svg" />
     </a>
     <footer class="footer" id="footer">
         <div class="footer-header">
@@ -81,7 +79,7 @@
             </li>
         </ul>
     </footer>
-    <script src="/blogs.js"></script>
+    <script src="/components/blogs.js"></script>
 
 </body>
 
