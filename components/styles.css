@@ -271,6 +271,7 @@ html {
 /* +++++++++++++++ Toggle Setup  +++++++++++++++++ */
 
 #toggle {
+    margin: 10px;
     cursor: pointer;
     position: relative;
     display: block;
@@ -328,13 +329,12 @@ html {
     padding: 5px;
     position: relative;
 }
-
+/* 
 .menuBar {
     display: flex;
-    width: 100%;
     margin-top: 10px;
-    justify-content: right;
-}
+    align: left;
+} */
 
 /* +++++++++++++++Dark Mode Settings+++++++++++++++ */
 .active {
