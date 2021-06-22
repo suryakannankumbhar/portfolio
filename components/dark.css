@@ -37,7 +37,7 @@ hr {
     text-decoration: none;
     padding: 0.5rem 1rem;
     color: white;
-    max-width: fit-content;
+    /* max-width: fit-content; */
     margin-bottom: 0.75rem;
 }
 
