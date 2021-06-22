@@ -279,56 +279,6 @@ html {
 
 /* +++++++++++++++ Toggle Setup  +++++++++++++++++ */
 
-#toggle {
-    margin: 10px;
-    cursor: pointer;
-    position: relative;
-    display: block;
-    width: 64px;
-    height: 32px;
-    margin-right: 15px;
-    border-radius: 32px;
-    background: white;
-    transition: 0.25s;
-    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
-        inset 8px 8px rgba(0, 0, 0, 0.1), inset -4px 4px rgba(0, 0, 0, 0.1);
-}
-
-#toggle.active {
-    background: white;
-    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
-        inset 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 60px rgba(0, 0, 0, 0.5);
-}
-#toggle .indicator {
-    position: absolute;
-    /* display: block; */
-    top: 0;
-    left: 0;
-    width: 32px;
-    height: 32px;
-    background: linear-gradient(to bottom, #444, #222);
-    border-radius: 50%;
-    transform: scale(0.8);
-    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.5), inset 4px 4px silver,
-        inset -4px -4px black;
-    transition: 0.5s;
-}
-
-#toggle.active .indicator {
-    left: 32px;
-    background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1), inset 4px 4px white,
-        inset -4px -4px silver;
-    transition: 0.5s;
-}
-
-.fa-moon {
-    color: #f1c40f;
-}
-
-.fa-sun {
-    color: #f39c12;
-}
 .label {
     top: 2px;
     cursor: pointer;
@@ -363,7 +313,7 @@ html {
     padding: 5px;
     position: relative;
     height: 15px;
-    width: 40px;
+    width: 42px;
     transform: scale(1.5);
     margin-right: 20px;
     margin-top: 10px;
@@ -382,7 +332,7 @@ html {
 }
 
 .checkbox:checked + .label .ball {
-    transform: translateX(24px);
+    transform: translateX(23px);
 }
 
 .fa-moon {
