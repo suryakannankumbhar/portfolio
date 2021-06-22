@@ -7,10 +7,12 @@
     <title>blog | surya kannan kumbhar</title>
     <link href="styles.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/images/android-chrome-512x512.png">
+    <link href="/font-awesome/css/all.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <nav class="navigation container top">
+    <nav class="navigation container top" id="navigation">
         <div class="nav-brand">surya kannan kumbhar</div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline">
@@ -24,11 +26,21 @@
             </li>
         </ul>
     </nav>
-    <header class="hero-blog">
+    <div class="menuBar">
+        <div id="toggle">
+            <div class="label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+
+            </div>
+            <i class="indicator"></i>
+        </div>
+    </div>
+    <header class="hero-blog" id="hero">
         <img class="hero-image-blog" src="/images/hero-blog.svg">
         <h1 class="hero-heading">my<span class="hero-span">blogs</span></h1>
     </header>
-    <section class="section">
+    <section class="section" id="section">
         <div class="container container-center">
             <h1>Getting Started with <span class="hero-span">Pygame</span></h1>
             <small>April, 2021</small>
@@ -43,9 +55,9 @@
     </section>
 
     <a href="#top">
-        <img class="topButton" src="images/keyboard_capslock-black-48dp.svg" />
+        <img class="topButton" id="topButton" src="images/keyboard_capslock-black-48dp.svg" />
     </a>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-header">
             connect with me
         </div>
@@ -69,6 +81,7 @@
             </li>
         </ul>
     </footer>
+    <script src="/blogs.js"></script>
 
 </body>
 
