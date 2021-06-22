@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
+    <link id="myStyleSheet" href="styles.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/images/android-chrome-512x512.png">
+    <link href="/font-awesome/css/all.css" rel="stylesheet">
     <title>home | surya kannan kumbhar</title>
 </head>
 
 <body>
-
-    <nav class="navigation container top">
+    <nav class="navigation container top" id="navigation">
         <div class="nav-brand">surya kannan kumbhar</div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline">
@@ -25,9 +25,17 @@
             </li>
         </ul>
     </nav>
+    <div class="menuBar">
+        <div id="toggle">
+            <div class="label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
 
-
-    <header class="hero">
+            </div>
+            <i class="indicator"></i>
+        </div>
+    </div>
+    <header class="hero" id="hero">
         <img class="hero-image" src="/images/hero-home.svg">
         <h1 class="hero-heading">
             i am surya <span class="hero-span">{</span>a web dev in making<span class="hero-span">}</span>
@@ -35,7 +43,7 @@
     </header>
 
 
-    <section class="section">
+    <section class="section" id="section">
         <div class="container container-center">
             <h1>about<span class="hero-span">me</span></h1>
             <p>i am very new to the world of web development and still exploring this vast ocean. i made this portfolio
@@ -50,7 +58,7 @@
     </section>
 
 
-    <section class="section">
+    <section class="section" id="section">
         <div class="container container-center">
             <h1>my<span class="hero-span">projects</span></h1>
             <p>i believe in exploring and learning new things. I've been working on some projects which i'll be updating
@@ -62,7 +70,7 @@
     </section>
 
 
-    <section class="section">
+    <section class="section" id="section">
         <div class="container container-center">
             <h1>my<span class="hero-span">blogs</span></h1>
             <p>I'll be documenting my learnings throughout this journey in blogs which I'll keep updating on this <span
@@ -73,11 +81,11 @@
         </div>
     </section>
     <a href="#top">
-        <img class="topButton" src="images/keyboard_capslock-black-48dp.svg" />
+        <img class="topButton" id="topButton" src="images/keyboard_capslock-black-48dp.svg" />
     </a>
 
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-header">
             connect with me
         </div>
@@ -101,7 +109,7 @@
             </li>
         </ul>
     </footer>
-
+    <script src="app.js"></script>
 </body>
 
 </html>
