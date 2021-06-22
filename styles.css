@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap'); */
 
 :root {
-    --primary-color: #52057b;
+    --primary-color: #0cafff;
     --heading-color: #6b7280;
     --off-white: #34d399;
 }
-
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0px;
-    background-color: black;
+    background-color: white;
 }
 
 hr {
@@ -53,7 +53,7 @@ hr {
 }
 
 .link-secondary {
-    color: white;
+    color: black;
     border-radius: 5rem;
     border: 1px solid var(--primary-color);
 }
@@ -84,11 +84,14 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 
 .navigation .nav-brand {
     font-weight: bold;
-    font-size: x-large;
+    margin: 0;
+    font-size: 30px;
+    color: black;
 }
 
 .navigation .link {
@@ -104,6 +107,7 @@ hr {
     color: black;
     background-color: white;
     border-radius: 1rem;
+
     box-shadow: 0px 0px 10px white;
 }
 
@@ -115,7 +119,7 @@ hr {
 
 .hero {
     padding: 2rem;
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
 }
 
 .hero .hero-image {
@@ -137,12 +141,12 @@ hr {
 
 .hero .hero-heading {
     padding-top: 1rem;
-    color: white;
+    color: black;
     text-align: center;
 }
 
 .hero-span {
-    color: red;
+    color: #0cafff;
 }
 
 .hero-blog {
@@ -150,9 +154,10 @@ hr {
     color: white;
 }
 
-.nav-brand,
 .nav-pills {
     display: inline;
+    padding: 0;
+    margin: 5px;
 }
 
 /* sections */
@@ -166,8 +171,8 @@ ul {
 
 .section {
     padding: 1.5rem;
-    background-color: #1f2937;
-    color: white;
+    background-color: #eaf4fc;
+    color: black;
     border-radius: 1rem;
     margin-bottom: 1rem;
     margin-left: 10%;
@@ -184,7 +189,7 @@ ul {
 .about-me-span,
 .projects-span,
 .blogs-span {
-    color: red;
+    color: #0cafff;
     text-decoration: none;
 }
 
@@ -230,7 +235,7 @@ body {
     .nav-brand {
         justify-content: center;
         display: flex;
-        padding: 1rem;
+        padding-bottom: 0.5rem;
     }
     .nav-pills {
         justify-content: center;
@@ -243,7 +248,7 @@ body {
     }
 }
 .topButton {
-    background-color: white;
+    background-color: #eaf4fc;
     border-radius: 50%;
     position: fixed;
     bottom: 25px;
@@ -261,4 +266,137 @@ html {
         bottom: 50px;
         right: 25px;
     }
+}
+
+/* +++++++++++++++ Toggle Setup  +++++++++++++++++ */
+
+#toggle {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 64px;
+    height: 32px;
+    margin-right: 15px;
+    border-radius: 32px;
+    background: white;
+    transition: 0.25s;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+        inset 8px 8px rgba(0, 0, 0, 0.1), inset -4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#toggle.active {
+    background: white;
+    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+        inset 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 60px rgba(0, 0, 0, 0.5);
+}
+#toggle .indicator {
+    position: absolute;
+    /* display: block; */
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(to bottom, #444, #222);
+    border-radius: 50%;
+    transform: scale(0.8);
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.5), inset 4px 4px silver,
+        inset -4px -4px black;
+    transition: 0.5s;
+}
+
+#toggle.active .indicator {
+    left: 32px;
+    background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1), inset 4px 4px white,
+        inset -4px -4px silver;
+    transition: 0.5s;
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+.label {
+    top: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+}
+
+.menuBar {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: right;
+}
+
+/* +++++++++++++++Dark Mode Settings+++++++++++++++ */
+.active {
+    background-color: black;
+}
+
+.active .hero-span {
+    color: #cf1666;
+}
+
+section.active strong {
+    color: #cf1666;
+}
+
+.navigation.active {
+    background: #232628;
+    box-shadow: 0 0 10px #4f5456;
+}
+
+.navigation.active .nav-brand {
+    color: #cf1666;
+}
+
+.section.active {
+    background: #232628;
+    box-shadow: 0 0 10px #4f5456;
+}
+
+.active .hero-heading {
+    color: white;
+}
+.section.active .container {
+    color: white;
+}
+
+.active .link.link-length {
+    background: #6f7375;
+}
+
+.footer.active {
+    background: #232628;
+    box-shadow: 0 0 10px #4f5456;
+}
+.footer.active .link {
+    color: #cf1666;
+}
+
+.topButton.active {
+    background: #cf1666;
+}
+
+.navigation.active .link-active {
+    background: #cf1666;
+    color: black;
+    box-shadow: 0 0 15px black;
+}
+
+.section.active .link-primary {
+    background: #6f7375;
+}
+
+.section.active .link-secondary {
+    border: 1px solid #6f7375;
+    color: white;
 }
