@@ -3,6 +3,8 @@ var theme = document.getElementById('myStyleSheet');
 let sheet;
 var setStatus = localStorage.status;
 var setTheme = localStorage.theme;
+var darkMode = '/components/dark.css';
+var lightMode = '/components/light.css';
 var checkToggle = 'unchecked';
 localStorage.setItem('mode', defaultTheme);
 localStorage.setItem('status', checkToggle);
@@ -11,10 +13,10 @@ var defaultTheme = '/components/light.css';
 
 // setting theme from local storage
 if (setTheme == '/components/dark.css') {
-    theme.href = setTheme;
+    theme.href = darkMode;
     chk.checked = true;
 } else {
-    theme.href = defaultTheme;
+    theme.href = lightMode;
     chk.checked = false;
 }
 
