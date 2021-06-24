@@ -9,8 +9,9 @@ var checkToggle = 'unchecked';
 localStorage.setItem('mode', defaultTheme);
 localStorage.setItem('status', checkToggle);
 var defaultTheme = '/components/light.css';
-// theme.href = defaultTheme;
 
+//svg dark mode initialization
+//    to be filled
 // setting theme from local storage
 if (setTheme == '/components/dark.css') {
     theme.href = darkMode;
@@ -37,4 +38,18 @@ chk.addEventListener('change', () => {
         }
         localStorage.setItem('theme', sheet);
     }
+
+    // Setting SVG colors
+    if (localStorage.theme == '/components/dark.css') {
+        //    to be filled
+    } else {
+        //    to be filled
+    }
 });
+
+// Setting SVG colors using Local Storage
+if (localStorage.theme == '/components/dark.css') {
+    //    to be filled
+} else {
+    //    to be filled
+}

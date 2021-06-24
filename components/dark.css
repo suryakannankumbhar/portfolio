@@ -139,6 +139,17 @@ svg {
     max-width: 400px;
     max-height: 400px;
 }
+.project-svg {
+    margin-top: -60px;
+}
+
+.index-svg {
+    margin-top: -40px;
+}
+
+.explore {
+    margin-bottom: 20px;
+}
 
 .hero .hero-image {
     width: 100%;
@@ -158,9 +169,11 @@ svg {
 }
 
 .hero .hero-heading {
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     color: white;
     text-align: center;
+    margin-top: -40px;
+    margin-bottom: 0;
 }
 
 .hero-span {
@@ -554,4 +567,20 @@ html {
     100% {
         transform: rotate(0deg);
     }
+}
+
+.bubbleLine {
+    fill: #6f7375;
+}
+
+.fillRed {
+    fill: #cf1666;
+}
+
+.fillDarkGrey {
+    fill: #232628;
+}
+
+.fillLightGrey {
+    fill: #4f5456;
 }
