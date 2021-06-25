@@ -48,8 +48,9 @@ function scrollFunction() {
         document.body.scrollTop > 200 ||
         document.documentElement.scrollTop > 200
     ) {
-        mybutton.style.visibility = 'visible';
+        mybutton.style.display = 'block';
+        mybutton.classList.toggle('active');
     } else {
-        mybutton.style.visibility = 'hidden';
+        mybutton.style.display = 'none';
     }
 }

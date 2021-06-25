@@ -299,6 +299,7 @@ body {
     position: fixed;
     bottom: 25px;
     right: 25px;
+    display: none;
 }
 html {
     scroll-behavior: smooth;
