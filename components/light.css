@@ -194,11 +194,12 @@ ul {
 }
 
 .section {
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     background-color: #eaf4fc;
     color: black;
     border-radius: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
@@ -303,6 +304,9 @@ html {
         position: fixed;
         bottom: 50px;
         right: 25px;
+    }
+    .section {
+        padding-bottom: 1rem;
     }
 }
 
