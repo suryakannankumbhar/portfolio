@@ -1,3 +1,3 @@
 # portfolio 
-this is my portfolio that i made as an assaignment for neog.camp.
+this is my portfolio website.
 <p>i'll be updating this portfolio as i get better at web dev</p>
