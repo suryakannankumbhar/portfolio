@@ -1,17 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap'); */
 
-/* :root {
-    --primary-color: #0cafff;
-    --heading-color: #6b7280;
-    --off-white: #34d399;
-} */
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0px;
-    background-color: black;
+    background-color: #000000;
+    opacity: 1;
+    background-image: radial-gradient(#1c1d1d 2px, transparent 2px),
+        radial-gradient(#1c1d1d 2px, #000000 2px);
+    background-size: 80px 80px;
+    background-position: 0 0, 40px 40px;
 }
 
+.projects,
+.blogs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
 hr {
     margin: 2.5rem 0rem;
 }
@@ -26,10 +39,6 @@ hr {
     max-width: 700px;
     margin: auto;
 }
-
-/* .section p {
-    text-align: center;
-} */
 
 /* links */
 
@@ -46,6 +55,10 @@ hr {
     text-align: center;
     align-items: center;
 } */
+
+.wrapper {
+    text-align: center;
+}
 
 .link-primary {
     background-color: #6f7375;
@@ -207,12 +220,15 @@ ul {
     border-radius: 1rem;
     margin-bottom: 2rem;
     padding-bottom: 3rem;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 40%;
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 0 10px #4f5456;
+}
+
+.paraText {
+    margin-top: 0;
 }
 
 .ow {
@@ -261,6 +277,24 @@ body {
     width: 100%;
 }
 
+.gifBox {
+    justify-content: center;
+}
+.gifBox img {
+    width: 100%;
+    margin-bottom: 3vh;
+    border-radius: 10px;
+}
+.gifBox:hover {
+    animation-play-state: paused;
+}
+
+@media (max-width: 1000px) {
+    .carousel {
+        display: none;
+    }
+}
+
 @media (max-width: 700px) {
     .container {
         display: flex;
@@ -293,6 +327,9 @@ body {
         max-width: 330px;
         margin-top: 25px;
     }
+    .section {
+        width: 50%;
+    }
 }
 .topButton {
     background-color: #cf1666;
@@ -316,6 +353,7 @@ html {
     }
     .section {
         padding-bottom: 1rem;
+        width: 80%;
     }
 }
 

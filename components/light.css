@@ -1,20 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap'); */
 
 :root {
+    --background-color: #ffff;
     --primary-color: #0cafff;
-    --heading-color: #6b7280;
-    --off-white: #34d399;
+    --accent-one: #ffff;
+    --section-color: #eaf4fc;
+    --accent-two: #000;
 }
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0px;
-    background-color: white;
+    background-color: #ffffff;
+    opacity: 1;
+    background-image: radial-gradient(#c5e7fe 2px, transparent 2px),
+        radial-gradient(#c5e7fe 2px, #ffffff 2px);
+    background-size: 80px 80px;
+    background-position: 0 0, 40px 40px;
 }
 
 hr {
     margin: 2.5rem 0rem;
 }
+
+.projects,
+.blogs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
 /* contaiers */
 
 .container {
@@ -26,34 +48,28 @@ hr {
     margin: auto;
 }
 
-/* .section p {
-    text-align: center;
-} */
-
 /* links */
+
+.wrapper {
+    text-align: center;
+}
 
 .link {
     text-decoration: none;
     padding: 0.5rem 1rem;
-    color: white;
+    color: var(--accent-one);
     /* max-width: fit-content; */
     margin-bottom: 0.75rem;
 }
 
-/* .wrapper .link {
-    display: inline-flexbox;
-    text-align: center;
-    align-items: center;
-} */
-
 .link-primary {
     background-color: var(--primary-color);
     border-radius: 5rem;
-    color: white;
+    color: var(--section-color);
 }
 
 .link-secondary {
-    color: black;
+    color: var(--accent-two);
     border-radius: 5rem;
     border: 1px solid var(--primary-color);
 }
@@ -91,7 +107,7 @@ hr {
     font-weight: bold;
     margin: 0;
     font-size: 30px;
-    color: black;
+    color: var(--accent-two);
 }
 
 .navigation .link {
@@ -104,7 +120,7 @@ hr {
 
 .navigation .link-active {
     font-weight: bolder;
-    color: black;
+    color: var(--accent-two);
     background-color: white;
     border-radius: 1rem;
 
@@ -163,19 +179,19 @@ svg {
 }
 
 .hero .hero-heading {
-    color: black;
+    color: var(--accent-two);
     text-align: center;
     margin-top: -40px;
     margin-bottom: 0;
 }
 
 .hero-span {
-    color: #0cafff;
+    color: var(--primary-color);
 }
 
 .hero-blog {
     text-align: center;
-    color: white;
+    color: var(--accent-two);
 }
 
 .nav-pills {
@@ -194,17 +210,19 @@ ul {
 }
 
 .section {
-    /* padding: 1.5rem; */
-    background-color: #eaf4fc;
-    color: black;
+    background-color: var(--section-color);
+    color: var(--accent-two);
     border-radius: 1rem;
     margin-bottom: 2rem;
     padding-bottom: 3rem;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 40%;
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: left;
+}
+
+.paraText {
+    margin-top: 0;
 }
 
 .ow {
@@ -214,7 +232,7 @@ ul {
 .about-me-span,
 .projects-span,
 .blogs-span {
-    color: #0cafff;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -224,13 +242,13 @@ footer {
     background-color: var(--primary-color);
     padding: 1rem 0rem;
     text-align: center;
-    color: white;
+    color: var(--accent-two);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
 
 .footer .links {
-    color: white;
+    color: var(--accent-one);
 }
 
 .footer ul {
@@ -250,6 +268,25 @@ footer {
 
 body {
     width: 100%;
+}
+
+.gifBox {
+    text-align: center;
+}
+.gifBox img {
+    max-width: 100%;
+    margin-bottom: 3vh;
+    border-radius: 10px;
+}
+
+img.tictactoe {
+    max-width: 55%;
+}
+
+@media (max-width: 1000px) {
+    .carousel {
+        display: none;
+    }
 }
 
 @media (max-width: 700px) {
@@ -284,6 +321,9 @@ body {
         max-width: 330px;
         margin-top: 25px;
     }
+    .section {
+        width: 50%;
+    }
 }
 .topButton {
     background-color: #eaf4fc;
@@ -307,6 +347,7 @@ html {
     }
     .section {
         padding-bottom: 1rem;
+        width: 80%;
     }
 }
 
@@ -386,7 +427,7 @@ html {
 }
 
 .label {
-    background-color: grey;
+    background-color: var(--accent-two);
     border-radius: 50px;
     cursor: pointer;
     display: flex;
@@ -403,7 +444,7 @@ html {
 }
 
 .label .ball {
-    background-color: #fff;
+    background-color: var(--accent-one);
     border-radius: 50%;
     position: absolute;
     /* top: 2px; */
@@ -612,4 +653,20 @@ html {
     100% {
         transform: rotate(0deg);
     }
+}
+
+strong {
+    color: var(--primary-color);
+}
+
+#Vector {
+    fill: var(--primary-color);
+}
+
+#Vector_2 {
+    fill: var(--primary-color);
+}
+
+#table {
+    fill: black;
 }
