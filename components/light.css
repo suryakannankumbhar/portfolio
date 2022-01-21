@@ -41,6 +41,7 @@ hr {
 
 .container {
     padding: 0rem 1rem;
+    text-align: center;
 }
 
 .container-center {
@@ -266,6 +267,11 @@ footer {
     font-size: 100px;
 }
 
+.nav-brand a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     width: 100%;
 }
@@ -281,12 +287,6 @@ body {
 
 img.tictactoe {
     max-width: 55%;
-}
-
-@media (max-width: 1000px) {
-    .carousel {
-        display: none;
-    }
 }
 
 @media (max-width: 700px) {
