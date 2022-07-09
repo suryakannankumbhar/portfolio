@@ -36,7 +36,10 @@ portfolio
 <br />
 
 <h3>some github stats?</h3>
-<img src="https://github-readme-stats.vercel.app/api?username=suryakannankumbhar&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21" alt="Martin's GitHub Stats" />
+<p align="center"><a href="https://github.com/suryakannankumbhar/github-readme-stats"><img alt="Surya's Github Stats" src="https://github-readme-stats.vercel.app/api?username=suryakannankumbhar&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117" /></a></p>
+<p align="center"><a href="https://github.com/suryakannankumbhar/github-readme-stats"><img alt="Surya's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=suryakannankumbhar&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=0D1117" /></a></p>
+<p align="center"><a href="https://github.com/suryakannankumbhar/github-readme-activity-graph"><img alt="Surya's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=suryakannankumbhar&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true" /></a></p>
+<p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=suryakannankumbhar&theme=highcontrast&ring=5BCDEC&fire=5BCDEC&currStreakLabel=5BCDEC" alt="suryakannankumbhar" /></p>
 <br />
 
 
