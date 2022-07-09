@@ -35,8 +35,8 @@ portfolio
 <p align="center"><kbd><img  src="images\readme\Screenshot%202022-07-09%20232359.png" height="400px" ></kbd></p>
 <br />
 
-<h3>some stats</h3>
-<img align="center" src="https://github-readme-stats.vercel.app/api?username=suryakannankumbhar&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21" alt="Martin's GitHub Stats" />
+<h3>some github stats?</h3>
+<img src="https://github-readme-stats.vercel.app/api?username=suryakannankumbhar&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21" alt="Martin's GitHub Stats" />
 <br />
 
 
