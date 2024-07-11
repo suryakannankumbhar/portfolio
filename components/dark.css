@@ -287,9 +287,10 @@ body {
     justify-content: center;
 }
 .gifBox img {
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 3vh;
     border-radius: 10px;
+    max-height: 400px;
 }
 .gifBox:hover {
     animation-play-state: paused;

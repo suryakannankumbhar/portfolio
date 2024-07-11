@@ -283,6 +283,7 @@ body {
     max-width: 100%;
     margin-bottom: 3vh;
     border-radius: 10px;
+    max-height: 400px;
 }
 
 img.tictactoe {
